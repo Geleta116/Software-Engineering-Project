@@ -1,0 +1,132 @@
+.App-header {
+  /* background-color: #282c34; */
+  height: 100vh;
+  background-image: url("../src/images/istockphoto-649192402-170667a.jpg");
+  background-color: #272727;
+  justify-content: center;
+  background-size: cover;
+
+  color: white;
+}
+/*Login*/
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+}
+.custom-btn {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.custom-btn:hover {
+  background-color: antiquewhite;
+}
+.input {
+  border: none;
+  background-color: #070707;
+  color: #b4b4b4;
+  border-bottom: #b4b4b4 2px solid;
+  padding-bottom: 10px;
+  font-size: larger;
+  outline: none;
+  width: 350px;
+}
+.input::placeholder {
+  color: #b4b4b4;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-border {
+  border-top: #b4b4b4 2px solid;
+  padding-top: 10px;
+}
+
+.join-btn {
+  margin-bottom: 50px;
+}
+.dropdown {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  outline: none;
+  background-color: #b4b4b4;
+}
+.dropdown .select .outline {
+  outline: none;
+  border: none;
+  position: relative;
+  left: 2px;
+  margin: 0px 0;
+  height: 100%;
+}
+.dropdown .outline {
+  height: 100%;
+  border-radius: 0;
+  padding: 10px 0;
+}
+/* .cards_ {
+  display: grid;
+  width: 80%;
+} */
+.hover:hover {
+  transform: scale(1.01);
+  transition: 0.1s;
+}
+.books-container,
+.videos-container {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  /* paddingTop: "40px",
+background: "#272727",
+height: "100vh", */
+}
+
+.books,
+.videos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card_ {
+    width: 28vw;
+  }
+  .books-container,
+  .videos-container {
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card_ {
+    width: 22rem;
+  }
+}
